@@ -1,4 +1,9 @@
-{{ config(materialized="view") }}
+{{
+  config(
+    materialized = "table",
+    schema = 'Tops'
+  )
+}}
 WITH order_Customer AS 
 (
 select

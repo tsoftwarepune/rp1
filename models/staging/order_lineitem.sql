@@ -1,4 +1,9 @@
-{{ config(materialized="table") }}
+{{
+  config(
+    materialized = "table",
+    schema = 'Tops'
+  )
+}}
 WITH order_lineitem AS 
 (
 select

@@ -1,5 +1,4 @@
-/*
-{% macro generate_database_name(custom_database_name=none, node=none) -%}
+{% macro generate_database_name(custom_database_name, node) -%}
 
     {%- set default_database = target.database -%}
     {%- if custom_database_name is none -%}
@@ -8,10 +7,8 @@
 
     {%- else -%}
 
-       {{ default_database }}
-       
+        {{ custom_database_name | trim }}
+
     {%- endif -%}
 
 {%- endmacro %}
-
-*/

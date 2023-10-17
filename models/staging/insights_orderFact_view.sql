@@ -1,7 +1,7 @@
 {{
   config(
     materialized = "view",
-    schema = 'Tops'
+    schema = 'tops'
   )
 }}
 WITH OrderFact_view AS 
@@ -12,6 +12,6 @@ O_CUSTKEY,
 O_SHIPPRIORITY,
 O_COMMENT,
 C_NAME
-from {{ ref('OrderFact_Table') }} 
+from {{ ref('insights_orderFact_table') }} 
 )
 select * from OrderFact_view                                              

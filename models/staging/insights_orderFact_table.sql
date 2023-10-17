@@ -1,7 +1,8 @@
 {{
   config(
     materialized = "table",
-    schema = 'Insights'
+    schema = 'insights',
+    tags='abc'
   )
 }}
 WITH OrderFact_Table AS 
@@ -16,8 +17,8 @@ ol.O_ORDERPRIORITY,
 ol.O_SHIPPRIORITY,
 ol.O_COMMENT,
 oc.C_NAME
-from {{ ref('Tops_order_Customer') }} as oc
-inner join {{ ref('Tops_order_lineitem') }} as ol
+from {{ ref('tops_order_customer') }} as oc
+inner join {{ ref('tops_order_lineitem') }} as ol
 on oc.O_ORDERKEY = ol.O_ORDERKEY                                                    
 )
 select * from OrderFact_Table                                              

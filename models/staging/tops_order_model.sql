@@ -1,7 +1,7 @@
 {{
   config(
     materialized = "table",
-    schema = 'Tops'
+    schema = 'tops'
   )
 }}
 select * 

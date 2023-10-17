@@ -1,7 +1,8 @@
 {{
   config(
     materialized = "table",
-    schema = 'tops'
+    schema = 'tops',
+    database = 'gear_d'
   )
 }}
 select * 

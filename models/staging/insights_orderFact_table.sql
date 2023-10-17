@@ -2,6 +2,7 @@
   config(
     materialized = "table",
     schema = 'insights',
+    database = 'gear_d',
     tags='abc'
   )
 }}

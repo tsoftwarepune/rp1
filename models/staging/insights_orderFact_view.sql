@@ -1,7 +1,7 @@
 {{
   config(
     materialized = "view",
-    schema = 'tops',
+    schema = 'insights',
     database = 'gear_d'
   )
 }}

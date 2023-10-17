@@ -1,7 +1,7 @@
 {{
   config(
     materialized = "table",
-    schema = 'Tops'
+    schema = 'Insights'
   )
 }}
 WITH OrderFact_Table AS 

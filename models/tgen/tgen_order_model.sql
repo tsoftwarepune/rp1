@@ -1,7 +1,7 @@
 {{
   config(
     materialized = "table",
-    schema = 'tops',
+    schema = 'tgen',
     database = 'gear_d'
   )
 }}

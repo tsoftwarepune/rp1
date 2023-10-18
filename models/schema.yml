@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: tops_order_customer
+    columns:
+      - name: O_ORDERKEY
+        description: "This is unique value for order table"
+        tests:
+          - unique
+          - not_null
+  - name: tgen_customer_model
+    columns:
+      - name: C_CUSTKEY
+        description: "This is unique value for customer table"
+        tests:
+          - unique
+          - not_null

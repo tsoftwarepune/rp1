@@ -1,4 +1,4 @@
-{{ config(materialized="view", schema="insights", database="gear_d") }}
+{{ config(materialized="view") }}
 with
     orderfact_view as (
         select o_orderkey, o_custkey, o_shippriority, o_comment

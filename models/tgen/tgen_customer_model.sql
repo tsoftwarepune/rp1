@@ -1,9 +1,7 @@
 {{
   config(
-    materialized = "table",
-    schema = 'tgen',
-    database = 'gear_d'
-  )
+    materialized = "table"
+    )
 }}
 select * 
 from pc_dbt_db.stage_schema.stg_customers 

@@ -1,4 +1,4 @@
-{{ config(materialized="table", schema="tops", database="gear_d") }}
+{{ config(materialized="table") }}
 with
     order_customer as (
         select order_fact.*, customer_dim.c_name

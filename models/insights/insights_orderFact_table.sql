@@ -1,9 +1,6 @@
 {{
   config(
-    materialized = "table",
-    schema = 'insights',
-    database = 'gear_d',
-    tags='abc'
+    materialized = "table" 
   )
 }}
 WITH OrderFact_Table AS 

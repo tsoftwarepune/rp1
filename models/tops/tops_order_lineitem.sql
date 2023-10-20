@@ -1,9 +1,7 @@
 {{
   config(
-    materialized = "table",
-    schema = 'tops',
-    database = 'gear_d'
-  )
+    materialized = "table"
+      )
 }}
 WITH order_lineitem AS 
 (

@@ -1,8 +1,7 @@
 {{
   config(
-    materialized = "table",
-    schema = 'tgen',
-    database = 'gear_d'
+    materialized = "table"
+    
   )
 }}
 select * 

@@ -12,7 +12,6 @@ ol.O_ORDERSTATUS,
 ol.O_ORDERDATE,
 ol.O_ORDERPRIORITY,
 ol.O_SHIPPRIORITY,
-ol.O_COMMENT,
 oc.C_NAME
 from {{ ref('tops_order_customer') }} as oc
 inner join {{ ref('tops_order_lineitem') }} as ol

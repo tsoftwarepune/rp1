@@ -1,8 +1,13 @@
+
 {{
   config(
     materialized = "table"
-  )
+       )
 }}
+
+with source as (
+  select * from {{ source('staging_source', 'stg_lineitem') }}
+    ) 
 select * 
-from pc_dbt_db.stage_schema.stg_lineitem 
-    
+from source
+ 

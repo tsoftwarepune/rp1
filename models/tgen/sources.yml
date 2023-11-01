@@ -1,0 +1,14 @@
+version: 2
+sources:
+  - name: staging_source
+    database: PC_DBT_DB
+    schema: "stage_schema"
+    tables:
+      - name: "stg_orders"
+      - name: "stg_customers"
+      - name: "stg_lineitem"
+      
+      
+
+
+

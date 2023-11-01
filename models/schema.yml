@@ -8,10 +8,3 @@ models:
         tests:
           - unique
           - not_null
-  - name: tgen_customer_model
-    columns:
-      - name: C_CUSTKEY
-        description: "This is unique value for customer table"
-        tests:
-          - unique
-          - not_null

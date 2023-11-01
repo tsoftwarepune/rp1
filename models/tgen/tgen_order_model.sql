@@ -1,9 +1,11 @@
 {{
   config(
     materialized = "table"
-    
-  )
+       )
 }}
-select * 
-from   pc_dbt_db.stage_schema.stg_orders
 
+with source as (
+  select * from {{ source('staging_source', 'stg_orders') }}
+    ) 
+select * 
+from source
